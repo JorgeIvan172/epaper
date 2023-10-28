@@ -2,11 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import Menu from './Components/Menu';
 import Footer from './Components/Footer';
+import GoogleAnalytics from './Components/Analytics';
 
 
 function App() {
   return (
     <>
+    <GoogleAnalytics />
     <Menu />
     <div className="App">
       <header className="App-header">
