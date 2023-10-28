@@ -1,0 +1,56 @@
+/* Aplica estos estilos para el contenedor del footer */
+.footer-container {
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;*/
+    /*padding(top, right, bottom, left)*/
+    padding: 80px 150px 100px 100px;
+    background-color: black;
+  }
+
+/* Aplica estos estilos para elementos ul y li */
+ul {
+    list-style-type: none; /* Elimina los puntos de las listas */
+    /*padding(top, right, bottom, left)*/
+    padding: 0px 80px 0px 80px; /* Añade un poco de espacio entre los elementos */
+  }
+  
+  li {
+    margin-bottom: 35px; /* Ajusta el espaciado entre los elementos de la lista */
+    color: #fff; /* Cambia el color del texto a blanco */
+    font-weight: bold; /* Añade negritas */
+  }
+
+  li:hover {
+    color: #3b79ba; /* Cambia el color cuando se pasa el puntero */
+    cursor: pointer; /* Cambia el cursor a una "manita" */
+  }
+  
+  
+  /* Aplica estos estilos para los elementos que quieres mostrar lado a lado */
+  .footer-container > div {
+    display: inline-block;
+    vertical-align: top; /* Alinea los elementos superiormente */
+    margin-right: 10px; /* Ajusta el espacio entre los elementos */
+    
+  }
+
+  
+  /* Estilo para las imágenes */
+  .footer-logo {
+    height: 50px; /* Ajusta el tamaño máximo de la imagen según tu preferencia */
+     /*padding(top, right, bottom, left)*/
+     padding: 0px 30px 0px 28px; /* Añade un poco de espacio entre los elementos */
+     cursor: pointer;
+  }
+
+
+  .special-link a:active {
+    color: #3b79ba; /* Cambia el color cuando se hace clic */
+    text-decoration: underline; /* Añade subrayado cuando se hace clic */
+  }
+  
+  
+  

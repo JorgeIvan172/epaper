@@ -13,29 +13,12 @@
     margin-right: 40px;
   }
   
-/*Estylo del Barra de Busqueda y button Buscar*/
-  .search-bar {
-    display: flex;
-    margin-right: auto; /* Mueve la barra de búsqueda al extremo derecho */
-    
-  }
-  
-  .search-bar input {
-    margin-right: 5px; /* Añade un espacio entre el input y el botón */
-  }
-  
-  .search-bar button {
-    background-color: #3b79ba;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
   
   
 /* Estylos para los Navbar  */
 
   .navbar-links {
-    margin-right: auto; /* Mueve los enlaces al extremo izquierdo */
+    margin-left: auto; /* Cambiado de 'margin-right' a 'margin-left' */
   }
   
   .navbar-links ul {
@@ -46,7 +29,7 @@
   
   .navbar-links ul li {
     display: inline;
-    margin-right: 50px;
+    margin-right: 40px;
   }
   
   .navbar-links ul li a {

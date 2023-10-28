@@ -7,11 +7,6 @@ function Menu() {
     <div className="custom-navbar">
       <img src={logo} alt="Logo" className="navbar-logo" />
 
-      <div className="search-bar">
-        <input type="text" placeholder="Buscar." />
-        <button type="button">Buscar</button>
-      </div>
-
       <nav className="navbar-links">
         <ul>
           <li><a href="#perfil">Mi Perfil</a></li>

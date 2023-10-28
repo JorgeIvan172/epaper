@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Menu from './Components/Menu';
+import Footer from './Components/Footer';
+
 
 function App() {
   return (
@@ -22,6 +24,9 @@ function App() {
         </a>
       </header>
     </div>
+
+    <Footer />
+
     </>
   );
 }
