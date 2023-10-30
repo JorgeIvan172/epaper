@@ -1,34 +1,54 @@
-import logo from './logo.svg';
 import './App.css';
+//Importar Componentes.
 import Menu from './Components/Menu';
 import Footer from './Components/Footer';
 import GoogleAnalytics from './Components/Analytics';
+import Cart from './Components/Carts';
+
+import { BrowserRouter, Route, Routes} from 'react-router-dom'; // Importar Rutas
+
+
+
+
+function Admins(){
+
+  const numCart = 10; // Cambia este número según cuántas instancias desees
+
+  const cart= Array.from({ length: numCart }, (_, index) => (
+    <Cart key={index} />
+  ));
+
+  return(
+    <>
+      <div className="cart-container center">
+        {cart}
+    </div>
+    </>
+  );
+    
+}
 
 
 function App() {
+
+  const body = {
+    backgroundColor: '#cccccc',
+    padding: '40px 60px 40px 60px',
+    
+  }
+
   return (
     <>
     <GoogleAnalytics />
     <Menu />
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={body}>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/productos' element={<Admins />} />
+      </Routes>
+      </BrowserRouter>
     </div>
-
     <Footer />
-
     </>
   );
 }

@@ -9,12 +9,12 @@ function Menu() {
 
       <nav className="navbar-links">
         <ul>
-          <li><a href="#perfil">Mi Perfil</a></li>
-          <li><a href="#perfil">Iniciar Sesion</a></li>
-          <li><a href="#categorias">E-Paper</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#categorias">Categorías</a></li>
-          <li><a href="#categorias">Destacados</a></li>
+          <li><a href="miPerfil">Mi Perfil</a></li>
+          <li><a href="iniciarSesion">Iniciar Sesion</a></li>
+          <li><a href="epaper">E-Paper</a></li>
+          <li><a href="productos">Productos</a></li>
+          <li><a href="categorias">Categorías</a></li>
+          <li><a href="destacados">Destacados</a></li>
         </ul>
       </nav>
     </div>

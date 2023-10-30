@@ -1,0 +1,30 @@
+
+/*Estilos del Cart*/
+.card-with-border {
+    width: 19rem;
+    /*flex: 0 0 calc(25% - 20px); /* Para dividir en 3 columnas y aplicar espacio entre ellos */
+    background-color: white;
+    /* border: 3px solid #000000; /* Añade un borde rojo alrededor del componente */
+    border-radius: 9px;
+    padding: 13px;
+  }
+
+  /*Estilos de Imagen*/
+  .img {
+    height: 220px;
+ 
+  }
+
+  .img-center {
+    display: block;
+    margin: auto;
+  }
+
+  /*Estilos del Title Cart*/
+.title {
+  font-weight: bold;
+  font-size: 22px;
+  padding-top: 8px;
+}
+  
+  
