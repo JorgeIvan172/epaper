@@ -42,9 +42,10 @@ function App() {
     <GoogleAnalytics />
     <Menu />
     <div style={body}>
+      
     <BrowserRouter>
       <Routes>
-        <Route path='/epaper/productos' element={<Admins />} />
+        <Route path='epaper/productos' element={<Admins />} />
       </Routes>
       </BrowserRouter>
     </div>
