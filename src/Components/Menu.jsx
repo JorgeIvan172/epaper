@@ -12,7 +12,7 @@ function Menu() {
           <li><a href="miPerfil">Mi Perfil</a></li>
           <li><a href="iniciarSesion">Iniciar Sesion</a></li>
           <li><a href="epaper">E-Paper</a></li>
-          <li><a href="productos">Productos</a></li>
+          <li><a href="/epaper/productos">Productos</a></li>
           <li><a href="categorias">Categorías</a></li>
           <li><a href="destacados">Destacados</a></li>
         </ul>

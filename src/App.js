@@ -44,7 +44,7 @@ function App() {
     <div style={body}>
     <BrowserRouter>
       <Routes>
-        <Route path='/productos' element={<Admins />} />
+        <Route path='/epaper/productos' element={<Admins />} />
       </Routes>
       </BrowserRouter>
     </div>
