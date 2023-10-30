@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/epaper/static/css/main.185fe6da.css",
-    "main.js": "/epaper/static/js/main.9b66a35b.js",
+    "main.js": "/epaper/static/js/main.b7ed2b1d.js",
     "static/js/787.76412e80.chunk.js": "/epaper/static/js/787.76412e80.chunk.js",
     "static/media/Victus.png": "/epaper/static/media/Victus.a69b6c7a0f3ef188c2a3.png",
     "static/media/logo1.jpg": "/epaper/static/media/logo1.c13969c5c54841cfccda.jpg",
     "static/media/instagram.jpg": "/epaper/static/media/instagram.663148dcc90067015a61.jpg",
     "index.html": "/epaper/index.html",
     "main.185fe6da.css.map": "/epaper/static/css/main.185fe6da.css.map",
-    "main.9b66a35b.js.map": "/epaper/static/js/main.9b66a35b.js.map",
+    "main.b7ed2b1d.js.map": "/epaper/static/js/main.b7ed2b1d.js.map",
     "787.76412e80.chunk.js.map": "/epaper/static/js/787.76412e80.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.185fe6da.css",
-    "static/js/main.9b66a35b.js"
+    "static/js/main.b7ed2b1d.js"
   ]
 }
