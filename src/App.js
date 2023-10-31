@@ -8,7 +8,14 @@ import Cart from './Components/Carts';
 
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
+function Principal(){
+ return(
+  <>
+  
+  </>
+ )
 
+}
 
 function CartsProducts(){
   const numCart = 16; // Cambia este número según cuántas instancias desees
@@ -39,13 +46,12 @@ function App() {
       <GoogleAnalytics />
       <BrowserRouter>
       <Menu />
+    <div style={body}>
+    <CartsProducts />
       <Routes>
-      {/*<Route path="/epaper" component={App} element={<Menu />} > </Route>7*/}
-
-
         <Route path="/productos" Component={CartsProducts} />
-        
       </Routes>
+      </div>
       <Footer />
       </BrowserRouter>
     </>
