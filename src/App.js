@@ -40,10 +40,10 @@ function App() {
       <BrowserRouter>
       <Menu />
       <Routes>
-      {/*<Route path="/epaper" component={App} element={<Menu />} > </Route>*/}
+      {/*<Route path="/epaper" component={App} element={<Menu />} > </Route>7*/}
 
 
-        <Route path="/" Component={CartsProducts} />
+        <Route path="/productos" Component={CartsProducts} />
         
       </Routes>
       <Footer />

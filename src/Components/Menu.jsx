@@ -2,7 +2,7 @@ import React from 'react';
 import './Styles/Menu.css';
 import logo from '../img/logo1.jpg';
 import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap'
-import { Outlet, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 
 
 
@@ -13,14 +13,12 @@ function Menu() {
 
       <nav className="navbar-links">
         <ul>
-          <li><a href="miPerfil">Mi Perfil</a></li>
-          <li><a href="iniciarSesion">Iniciar Sesion</a></li>
-          <li><a href="epaper">E-Paper</a></li>
-          <li><a href="productos">Productos</a></li>
-          {/*<NavDropdown.Item as={Link} to="/epaper/productos" title="Productos"><b>Productos</b></NavDropdown.Item>*/}
-
-          <li><a href="categorias">Categorías</a></li>
-          <li><a href="destacados">Destacados</a></li>
+        <li><Link to="miPerfil">Mi Perfil</Link></li>
+          <li><Link to="iniciarSesion">Iniciar Sesion</Link></li>
+          <li><Link to="epaper">E-Paper</Link></li>
+          <li><Link to="productos">Productos</Link></li>
+          <li><Link to="categorias">Categorías</Link></li>
+          <li><Link to="destacados">Destacados</Link></li>
         </ul>
       </nav>
     </div>
