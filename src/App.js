@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 
 function CartsProducts(){
-  const numCart = 10; // Cambia este número según cuántas instancias desees
+  const numCart = 16; // Cambia este número según cuántas instancias desees
 
   const cart = Array.from({ length: numCart }, (_, index) => (
     <Cart key={index} />
@@ -43,10 +43,10 @@ function App() {
     <Router>
     <div style={body}>
          <Routes>
-           <Route path='/' element={<CartsProducts />} />
+         <Route path="/productos" element={<CartsProducts />} />
          </Routes>
        </div>    
-    </Router>
+  </Router>
     <Footer />
     </>
   );
