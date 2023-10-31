@@ -5,28 +5,25 @@ import Footer from './Components/Footer';
 import GoogleAnalytics from './Components/Analytics';
 import Cart from './Components/Carts';
 
-import { BrowserRouter, Route, Routes} from 'react-router-dom'; // Importar Rutas
+
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 
 
-
-function Admins(){
-
+function CartsProducts(){
   const numCart = 10; // Cambia este número según cuántas instancias desees
 
-  const cart= Array.from({ length: numCart }, (_, index) => (
+  const cart = Array.from({ length: numCart }, (_, index) => (
     <Cart key={index} />
   ));
 
-  return(
-    <>
-      <div className="cart-container center">
-        {cart}
+  return (
+    <div className="cart-container center">
+      {cart}
     </div>
-    </>
   );
-    
 }
+
 
 
 function App() {
@@ -39,16 +36,17 @@ function App() {
 
   return (
     <>
-    <GoogleAnalytics />
+
+<GoogleAnalytics />
     <Menu />
+    
+    <Router>
     <div style={body}>
-      
-    <BrowserRouter>
-      <Routes>
-        <Route path='epaper/productos' element={<Admins />} />
-      </Routes>
-      </BrowserRouter>
-    </div>
+         <Routes>
+           <Route path='/' element={<CartsProducts />} />
+         </Routes>
+       </div>    
+    </Router>
     <Footer />
     </>
   );
