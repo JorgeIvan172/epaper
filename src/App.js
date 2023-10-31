@@ -6,7 +6,7 @@ import GoogleAnalytics from './Components/Analytics';
 import Cart from './Components/Carts';
 
 
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 
 
@@ -36,18 +36,18 @@ function App() {
 
   return (
     <>
+      <GoogleAnalytics />
+      <BrowserRouter>
+      <Menu />
+      <Routes>
+      {/*<Route path="/epaper" component={App} element={<Menu />} > </Route>*/}
 
-<GoogleAnalytics />
-    <Menu />
-    
-    <Router>
-    <div style={body}>
-         <Routes>
-         <Route path="/productos" element={<CartsProducts />} />
-         </Routes>
-       </div>    
-  </Router>
-    <Footer />
+
+        <Route path="/" Component={CartsProducts} />
+        
+      </Routes>
+      <Footer />
+      </BrowserRouter>
     </>
   );
 }
