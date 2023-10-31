@@ -1,0 +1,39 @@
+
+/*Estilos de Cart y acomodo*/
+.card-custom {
+    width: 88rem;
+    background-color: #f0f0f0;
+    border-radius: 9px;
+  }
+  
+
+.product-card {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-image {
+    flex: 1;
+    padding: 1rem;
+  }
+  
+  .product-details {
+    flex: 2;
+    padding: 1rem;
+  }
+
+/*Estilos de Imagen*/
+  .product-image img {
+    width: 600px; /* Establece el ancho deseado */
+    height: auto; /* Esto mantendrá la proporción de la imagen */
+    border-radius: 9px;
+  }
+
+
+/*Estilos del Title Cart*/
+.title {
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 8px;
+  }
+  

@@ -1,8 +1,10 @@
 import './App.css';
+
 //Importar Componentes.
 import Menu from './Components/Menu';
 import Footer from './Components/Footer';
 import GoogleAnalytics from './Components/Analytics';
+import Product from './Components/Product';
 import Cart from './Components/Carts';
 
 
@@ -16,6 +18,8 @@ function Principal(){
  )
 
 }
+
+
 
 function CartsProducts(){
   const numCart = 16; // Cambia este número según cuántas instancias desees
@@ -47,9 +51,10 @@ function App() {
       <BrowserRouter>
       <Menu />
     <div style={body}>
-    <CartsProducts />
+    
       <Routes>
         <Route path="/productos" Component={CartsProducts} />
+        <Route path="/producto" Component={Product} />
       </Routes>
       </div>
       <Footer />
