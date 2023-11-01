@@ -29,11 +29,11 @@ function footer() {
 
             <div>
                 <ul>
-                    <li>Enlaces Utiles</li>
+                    <li>ENLACES UTILES</li>
                     <li>Ayuda</li>
                     <li>Envios</li>
                     <li className="special-link">
-                    <a href="https://www.instagram.com/ivn02_/">Social Web</a>
+                    <a href="https://www.instagram.com/ivn02_/">Instagram</a>
                     </li>
                 </ul>
             </div>

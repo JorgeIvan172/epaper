@@ -20,7 +20,7 @@ function Cart() {
       <Card.Img className="img img-center" src={Victus} />
       <Card.Body>
         <Card.Title className="title">Laptop Gammer HP Victus.</Card.Title>
-        <Card.Title className="title">14,000.</Card.Title>
+        <Card.Title className="title">$ 14,000.</Card.Title>
         <Card.Text>
         La laptop HP Victus 15-FA0031DX es una solución tanto para trabajar y estudiar como para entretenerte.
         </Card.Text>
@@ -31,7 +31,10 @@ function Cart() {
         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
   </ListGroup>*/}
 
-<button onClick={handleButtonClick}>Comprar.</button>
+<button onClick={handleButtonClick}
+className='comprar'
+>Comprar</button>
+
       
     </Card>
   );
