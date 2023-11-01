@@ -25,7 +25,7 @@ function CartProduct() {
             Conexión wifi.
             La duración de la batería depende del uso que se le dé al producto.
             </Card.Text>
-            <Button variant="primary"
+            <Button
             className='pagar'
             >Realizar pago</Button>
 

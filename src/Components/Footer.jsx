@@ -11,7 +11,7 @@ function footer() {
 
             <div>
                 <ul>
-                    <li>PRODUCTOS</li>
+                    <li>DESARROLLADORES</li>
                     <li>For The Record</li>
                     <li>Empleos</li>
                     <li>Acerca De</li>
@@ -33,7 +33,7 @@ function footer() {
                     <li>Ayuda</li>
                     <li>Envios</li>
                     <li className="special-link">
-                    <a href="https://www.instagram.com/ivn02_/">Instagram</a>
+                    <a href="https://www.facebook.com/profile.php?id=61552962421697&locale=es_LA">Facebook</a>
                     </li>
                 </ul>
             </div>
