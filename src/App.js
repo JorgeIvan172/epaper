@@ -6,6 +6,10 @@ import Footer from './Components/Footer';
 import GoogleAnalytics from './Components/Analytics';
 import Product from './Components/Product';
 import Cart from './Components/Carts';
+import 'bootstrap/dist/css/bootstrap.min.css';
+//Agregao xd
+import Title1 from './Components/Title';
+import CarouselComponent from './Components/Carusel';
 
 
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
