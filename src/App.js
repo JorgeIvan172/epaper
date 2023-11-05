@@ -15,13 +15,14 @@ import CarouselComponent from './Components/Carusel';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function Principal(){
- return(
-  <>
-  
-  </>
- )
-
-}
+  return(
+   <>
+    <CarouselComponent />
+    <Title1 text="La Mejores Ofertas en Equipos."/>
+   </>
+  )
+ 
+ }
 
 
 
@@ -41,30 +42,37 @@ function CartsProducts(){
 
 
 
-function App() {
-
-  const body = {
-    backgroundColor: '#cccccc',
-    padding: '40px 60px 40px 60px',
+function Principal(){
+  return(
+   <>
+    <CarouselComponent />
+    <Title1 text="La Mejores Ofertas en Equipos."/>
+   </>
+  )
+ 
+ }
+ 
+ 
+ 
+ 
+ function App() {
+   return (
+     <>
+       <GoogleAnalytics />
+       <BrowserRouter>
+       <Menu />
     
-  }
-
-  return (
-    <>
-      <GoogleAnalytics />
-      <BrowserRouter>
-      <Menu />
-    <div style={body}>
-    
-      <Routes>
-        <Route path="/productos" Component={CartsProducts} />
-        <Route path="/producto" Component={Product} />
-      </Routes>
-      </div>
-      <Footer />
-      </BrowserRouter>
-    </>
-  );
-}
+       <Routes>
+         <Route path="/" Component={Principal} />
+         <Route path="/productos" Component={CartsProducts} />
+         <Route path="/producto" Component={Product} />
+         <Route path='/epaper' Component={Somos}/>
+       </Routes>
+     
+       <Footer />
+       </BrowserRouter>
+     </>
+   );
+ }
 
 export default App;
