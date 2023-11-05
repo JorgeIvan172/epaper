@@ -40,17 +40,6 @@ function CartsProducts(){
   );
 }
 
-
-
-function Principal(){
-  return(
-   <>
-    <CarouselComponent />
-    <Title1 text="La Mejores Ofertas en Equipos."/>
-   </>
-  )
- 
- }
  
  
  
@@ -66,7 +55,8 @@ function Principal(){
          <Route path="/" Component={Principal} />
          <Route path="/productos" Component={CartsProducts} />
          <Route path="/producto" Component={Product} />
-         <Route path='/epaper' Component={Somos}/>
+         {/* Este no jala 
+         <Route path='/epaper' Component={Somos}/> */}
        </Routes>
      
        <Footer />
