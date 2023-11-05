@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/epaper/static/css/main.46e14fc4.css",
-    "main.js": "/epaper/static/js/main.77a0ac03.js",
+    "main.css": "/epaper/static/css/main.0f86ad32.css",
+    "main.js": "/epaper/static/js/main.909c6604.js",
     "static/js/787.76412e80.chunk.js": "/epaper/static/js/787.76412e80.chunk.js",
+    "static/media/Carusel1.jpg": "/epaper/static/media/Carusel1.7d26d1e8977103fbcdf4.jpg",
     "static/media/Victus.png": "/epaper/static/media/Victus.a69b6c7a0f3ef188c2a3.png",
+    "static/media/Carusel3.jpg": "/epaper/static/media/Carusel3.59f74d43500612dad184.jpg",
+    "static/media/Carusel4.jpg": "/epaper/static/media/Carusel4.ec0ec46f414fbce3f7a4.jpg",
     "static/media/logo1.jpg": "/epaper/static/media/logo1.c13969c5c54841cfccda.jpg",
     "static/media/instagram.jpg": "/epaper/static/media/instagram.663148dcc90067015a61.jpg",
     "index.html": "/epaper/index.html",
-    "main.46e14fc4.css.map": "/epaper/static/css/main.46e14fc4.css.map",
-    "main.77a0ac03.js.map": "/epaper/static/js/main.77a0ac03.js.map",
+    "main.0f86ad32.css.map": "/epaper/static/css/main.0f86ad32.css.map",
+    "main.909c6604.js.map": "/epaper/static/js/main.909c6604.js.map",
     "787.76412e80.chunk.js.map": "/epaper/static/js/787.76412e80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.46e14fc4.css",
-    "static/js/main.77a0ac03.js"
+    "static/css/main.0f86ad32.css",
+    "static/js/main.909c6604.js"
   ]
 }
