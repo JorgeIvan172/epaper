@@ -3,6 +3,7 @@ import './Styles/Carts.css';
 import Victus from '../img/Victus.png';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import ListGroup from 'react-bootstrap/ListGroup';
+import { Button } from 'react-bootstrap';
 
 function Cart() {
 
@@ -31,9 +32,9 @@ function Cart() {
         <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
   </ListGroup>*/}
 
-<button onClick={handleButtonClick}
+<Button onClick={handleButtonClick}
 className='comprar'
->Comprar</button>
+>Comprar</Button>
 
       
     </Card>
