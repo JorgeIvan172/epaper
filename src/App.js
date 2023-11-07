@@ -18,7 +18,7 @@ function Principal(){
   return(
    <>
     <CarouselComponent />
-    <Title1 text="La Mejores Ofertas en Equipos."/>
+   
    </>
   )
  
