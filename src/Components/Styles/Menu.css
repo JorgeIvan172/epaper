@@ -1,11 +1,8 @@
-/*Estylo del Navar*/
-.custom-navbar {
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    /*padding(top, right, bottom, left)*/
-    padding: 20px 100px 20px 100px; 
-  }
+.bg-black {
+  background-color: #000000; /* Color negro */
+  padding: 20px 100px 20px 100px;
+}
+
   
 /*Estylo del Logo*/
   .navbar-logo {
@@ -15,34 +12,24 @@
   }
   
   
-  
-/* Estylos para los Navbar  */
 
-  .navbar-links {
-    margin-left: auto; /* Cambiado de 'margin-right' a 'margin-left' */
+  .navbar-drop{
+    
+    color: #fff; /* Cambia el color del texto a blanco */
+    font-weight: bold; /* Añade negritas */
+    
   }
   
-  .navbar-links ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar-links ul li {
-    display: inline;
-    margin-right: 40px;
-  }
-  
-  .navbar-links ul li a {
+  .navbar-links{
     text-decoration: none;
     color: #fff; /* Cambia el color del texto a blanco */
     font-weight: bold; /* Añade negritas */
+    margin-right: 40px;
   }
   
-  .navbar-links ul li a:hover {
-    color:#8bc0ec
+  .navbar-links:hover {
+    color:#3b79ba
   }
   
 
-  
   /* ...resto de tu CSS si lo hay */
