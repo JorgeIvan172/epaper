@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Importar Componentes.
 import Menu from './Components/Menu';
@@ -6,7 +7,7 @@ import Footer from './Components/Footer';
 import GoogleAnalytics from './Components/Analytics';
 import Product from './Components/Product';
 import Cart from './Components/Carts';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Somos from './Components/Epaper';
 //Agregao xd
 import Title1 from './Components/Title';
 import CarouselComponent from './Components/Carusel';
@@ -21,7 +22,6 @@ function Principal(){
     <Title1 text="La Mejores Ofertas en Equipos."/>
    </>
   )
- 
  }
 
 
@@ -50,15 +50,12 @@ function CartsProducts(){
        <GoogleAnalytics />
        <BrowserRouter>
        <Menu />
-    
        <Routes>
          <Route path="/" Component={Principal} />
          <Route path="/productos" Component={CartsProducts} />
          <Route path="/producto" Component={Product} />
-         {/* Este no jala 
-         <Route path='/epaper' Component={Somos}/> */}
+         <Route path='/epaper' Component={Somos}/>
        </Routes>
-     
        <Footer />
        </BrowserRouter>
      </>
