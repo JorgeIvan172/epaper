@@ -1,0 +1,46 @@
+.somos-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Agrega espacio entre los elementos */
+    padding-left: 100px;
+    padding-right: 135px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  
+  .somos-text {
+    flex: 1; /* Permite que el texto tome el espacio restante */
+    padding: 0 20px; /* Añade un espacio entre la imagen y el texto */
+  }
+
+  .somos-img {
+    flex-shrink: 0; /* Evita que la imagen se encoja */
+    margin-right: 20px; /* Añade espacio entre la imagen y el texto */
+  }
+  
+  .somos-img img {
+    max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+  }
+
+  .color{
+    background-color: #e7e3e3;
+  }
+   
+/*Estylo de Imagen*/
+.img_Somos {
+    height: 450px;
+    cursor: pointer;
+  }
+  
+  /*Estylo de Texto*/
+  .text {
+  font-size: 19px;
+  line-height:1.5em;
+  text-align: justify;
+}
+
+/*Estylo de Titulo*/
+.title-Somos{
+    font-size: 40px;
+    padding-bottom: 30px;
+}

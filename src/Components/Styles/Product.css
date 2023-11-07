@@ -1,9 +1,13 @@
 
+
 /*Estilos de Cart y acomodo*/
 .card-custom {
     width: 88rem;
     background-color: #f0f0f0;
     border-radius: 9px;
+    margin: 0 auto; /* Agrega esta línea para centrar horizontalmente */
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   
 

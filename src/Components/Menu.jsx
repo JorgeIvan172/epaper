@@ -9,8 +9,9 @@ import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
 function Menu() {
   return (
     <div className="custom-navbar">
+      <Link to="/">
       <img src={logo} alt="Logo" className="navbar-logo" />
-
+      </Link>
       <nav className="navbar-links">
         <ul>
         <li><Link to="miPerfil">Mi Perfil</Link></li>
