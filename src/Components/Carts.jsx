@@ -1,11 +1,16 @@
 import Card from 'react-bootstrap/Card';
+//import CartProduct from './CartProduct'; // Asegúrate de que la ruta sea correcta
+import React from 'react';
 import './Styles/Carts.css';
-import Victus from '../img/Victus.png';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import ListGroup from 'react-bootstrap/ListGroup';
+import productsData from './ProductData';
 import { Button } from 'react-bootstrap';
 
-function Cart() {
+
+
+function Cart(props) {
+  const { imageSrc, title, price, description } = props.product;
 
     const navigate = useNavigate(); // Inicializa la instancia de useNavigate
 
@@ -15,30 +20,34 @@ function Cart() {
     navigate('/producto'); // Cambia '/otra-pagina' por la ruta a la que quieres redirigir
   }
 
+  
     
   return (
-    <Card className="card-with-border">
-      <Card.Img className="img img-center" src={Victus} />
+    <Card className="card-with-border" >
+      <Card.Img className="img img-center" src={imageSrc} />
       <Card.Body>
-        <Card.Title className="title">Laptop Gammer HP Victus.</Card.Title>
-        <Card.Title className="title">$ 14,000.</Card.Title>
-        <Card.Text>
-        La laptop HP Victus 15-FA0031DX es una solución tanto para trabajar y estudiar como para entretenerte.
-        </Card.Text>
+        <Card.Title className="title">{title}</Card.Title>
+        <Card.Title className="title">{price}</Card.Title>
+        <Card.Text>{description}</Card.Text>
       </Card.Body>
-      {/*<ListGroup className="list-group-flush">
-        <ListGroup.Item>Cras justo odio</ListGroup.Item>
-        <ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-        <ListGroup.Item>Vestibulum at eros</ListGroup.Item>
-  </ListGroup>*/}
+      
 
 <Button onClick={handleButtonClick}
-className='comprar'
->Comprar</Button>
-
+className='comprar'>
+  Comprar.</Button>
       
     </Card>
   );
 }
 
-export default Cart;
+function ProductList() {
+  return (
+    <div className="product-list-container">
+      {productsData.map((product, index) => (
+        <Cart key={index} product={product} />
+      ))}
+    </div>
+  );
+}
+
+export default ProductList;

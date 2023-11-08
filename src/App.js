@@ -6,7 +6,7 @@ import Menu from './Components/Menu';
 import Footer from './Components/Footer';
 import GoogleAnalytics from './Components/Analytics';
 import Product from './Components/Product';
-import Cart from './Components/Carts';
+import ProductList from './Components/Carts';
 import Somos from './Components/Epaper';
 //Agregao xd
 import Title1 from './Components/Title';
@@ -26,24 +26,9 @@ function Principal(){
 
 
 
-function CartsProducts(){
-  const numCart = 16; // Cambia este número según cuántas instancias desees
 
-  const cart = Array.from({ length: numCart }, (_, index) => (
-    <Cart key={index} />
-  ));
 
-  return (
-    <div className="cart-container center">
-      {cart}
-    </div>
-  );
-}
 
- 
- 
- 
- 
  function App() {
    return (
      <>
@@ -51,10 +36,10 @@ function CartsProducts(){
        <BrowserRouter>
        <Menu />
        <Routes>
-         <Route path="/" Component={Principal} />
-         <Route path="/productos" Component={CartsProducts} />
+         <Route path="/epaper" Component={Principal} />
+         <Route path="/productos" Component={ProductList} />
          <Route path="/producto" Component={Product} />
-         <Route path='/epaper' Component={Somos}/>
+         <Route path='/' Component={Somos}/>
        </Routes>
        <Footer />
        </BrowserRouter>
