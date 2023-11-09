@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/epaper/static/css/main.9da8b1c7.css",
-    "main.js": "/epaper/static/js/main.8f346c93.js",
+    "main.css": "/epaper/static/css/main.503ca85f.css",
+    "main.js": "/epaper/static/js/main.6c04e456.js",
     "static/js/787.76412e80.chunk.js": "/epaper/static/js/787.76412e80.chunk.js",
     "static/media/lenovo.png": "/epaper/static/media/lenovo.e4033e69e2f6f2d1f302.png",
     "static/media/Carusel1.jpg": "/epaper/static/media/Carusel1.7d26d1e8977103fbcdf4.jpg",
@@ -20,12 +20,12 @@
     "static/media/logo1.jpg": "/epaper/static/media/logo1.c13969c5c54841cfccda.jpg",
     "static/media/instagram.jpg": "/epaper/static/media/instagram.663148dcc90067015a61.jpg",
     "index.html": "/epaper/index.html",
-    "main.9da8b1c7.css.map": "/epaper/static/css/main.9da8b1c7.css.map",
-    "main.8f346c93.js.map": "/epaper/static/js/main.8f346c93.js.map",
+    "main.503ca85f.css.map": "/epaper/static/css/main.503ca85f.css.map",
+    "main.6c04e456.js.map": "/epaper/static/js/main.6c04e456.js.map",
     "787.76412e80.chunk.js.map": "/epaper/static/js/787.76412e80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9da8b1c7.css",
-    "static/js/main.8f346c93.js"
+    "static/css/main.503ca85f.css",
+    "static/js/main.6c04e456.js"
   ]
 }
