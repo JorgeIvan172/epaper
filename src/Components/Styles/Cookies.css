@@ -1,0 +1,30 @@
+#barracookies {
+    display: none;
+    z-index: 99999;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    min-height: 40px;
+    padding: 5px;
+    background: #303333;
+    color: #ffffff;
+    line-height: 20px;
+    font-family: verdana;
+    font-size: 12px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  #barracookies a:nth-child(2) {
+    padding: 4px;
+    background: #108f7e;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  #barracookies a {
+    color: rgb(252, 252, 252);
+    text-decoration: none;
+  }
