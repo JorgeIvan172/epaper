@@ -12,14 +12,15 @@ import Somos from './Components/Epaper';
 import Title1 from './Components/Title';
 import CarouselComponent from './Components/Carusel';
 
+import ProductList_2 from './Components/Carts_2';
 
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
-
 function Principal(){
   return(
    <>
     <CarouselComponent />
-   
+    <Title1 text="Las Mejores Productos." />
+    <ProductList_2 />
    </>
   )
  }
