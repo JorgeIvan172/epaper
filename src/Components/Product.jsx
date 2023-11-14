@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Victus from '../img/Victus.png';
 import Card from 'react-bootstrap/Card';
 import '../Components/Styles/Product.css'; // Asegúrate de importar tu archivo Product.css
+import Paypal from './Paypal';
+
 
 function CartProduct() {
   return (
@@ -25,9 +27,12 @@ function CartProduct() {
             Conexión wifi.
             La duración de la batería depende del uso que se le dé al producto.
             </Card.Text>
-            <Button
+
+          {/*<Button
             className='pagar'
-            >Realizar pago</Button>
+           >Realizar pago</Button>*/}
+
+            <Paypal />
 
           </Card.Body>
         </div>
