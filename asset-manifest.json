@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/epaper/static/css/main.503ca85f.css",
-    "main.js": "/epaper/static/js/main.ff56aa26.js",
+    "main.css": "/epaper/static/css/main.a4b14277.css",
+    "main.js": "/epaper/static/js/main.78b8c408.js",
     "static/js/787.76412e80.chunk.js": "/epaper/static/js/787.76412e80.chunk.js",
     "static/media/lenovo.png": "/epaper/static/media/lenovo.e4033e69e2f6f2d1f302.png",
     "static/media/Carusel1.jpg": "/epaper/static/media/Carusel1.7d26d1e8977103fbcdf4.jpg",
@@ -12,20 +12,22 @@
     "static/media/Somos.jpg": "/epaper/static/media/Somos.28f359c5ad05132c3c3b.jpg",
     "static/media/Victus.png": "/epaper/static/media/Victus.a69b6c7a0f3ef188c2a3.png",
     "static/media/Cuadernosoxford.png": "/epaper/static/media/Cuadernosoxford.a55f02fa993f68fd9c5f.png",
+    "static/media/Contactanos.png": "/epaper/static/media/Contactanos.5e45afbf55d928140e19.png",
     "static/media/Carusel3.jpg": "/epaper/static/media/Carusel3.59f74d43500612dad184.jpg",
     "static/media/Carusel4.jpg": "/epaper/static/media/Carusel4.ec0ec46f414fbce3f7a4.jpg",
     "static/media/mouse.png": "/epaper/static/media/mouse.56f9af104ceacbc1380a.png",
     "static/media/usbc.png": "/epaper/static/media/usbc.516879f25720b195aac9.png",
     "static/media/boligrafo.png": "/epaper/static/media/boligrafo.cf19288014ad90a4c400.png",
+    "static/media/NuestrosProductos.jpg": "/epaper/static/media/NuestrosProductos.6efce4a560c200dc1fc1.jpg",
     "static/media/logo1.jpg": "/epaper/static/media/logo1.c13969c5c54841cfccda.jpg",
     "static/media/instagram.jpg": "/epaper/static/media/instagram.663148dcc90067015a61.jpg",
     "index.html": "/epaper/index.html",
-    "main.503ca85f.css.map": "/epaper/static/css/main.503ca85f.css.map",
-    "main.ff56aa26.js.map": "/epaper/static/js/main.ff56aa26.js.map",
+    "main.a4b14277.css.map": "/epaper/static/css/main.a4b14277.css.map",
+    "main.78b8c408.js.map": "/epaper/static/js/main.78b8c408.js.map",
     "787.76412e80.chunk.js.map": "/epaper/static/js/787.76412e80.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.503ca85f.css",
-    "static/js/main.ff56aa26.js"
+    "static/css/main.a4b14277.css",
+    "static/js/main.78b8c408.js"
   ]
 }
