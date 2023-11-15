@@ -1,46 +1,82 @@
 .somos-container {
-    display: flex;
-    align-items: center; /* Alinea verticalmente los elementos */
-    justify-content: space-between; /* Agrega espacio entre los elementos */
-    padding-left: 100px;
-    padding-right: 135px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
-  
-  .somos-text {
-    flex: 1; /* Permite que el texto tome el espacio restante */
-    padding: 0 20px; /* Añade un espacio entre la imagen y el texto */
-  }
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: space-between; /* Agrega espacio entre los elementos */
+  padding-left: 100px;
+  padding-right: 135px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
 
-  .somos-img {
-    flex-shrink: 0; /* Evita que la imagen se encoja */
-    margin-right: 20px; /* Añade espacio entre la imagen y el texto */
-  }
-  
-  .somos-img img {
-    max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
-  }
+.somos-text {
+  flex: 1; /* Permite que el texto tome el espacio restante */
+  padding: 0 20px; /* Añade un espacio entre la imagen y el texto */
+}
 
-  .color{
-    background-color: #e7e3e3;
-  }
-   
+.somos-img {
+  flex-shrink: 0; /* Evita que la imagen se encoja */
+  margin-right: 20px; /* Añade espacio entre la imagen y el texto */
+}
+
+.somos-img img {
+  max-width: 100%; /* Asegura que la imagen no exceda el tamaño del contenedor */
+}
+
+.color{
+  background-color: #e7e3e3;
+}
+ 
 /*Estylo de Imagen*/
 .img_Somos {
-    height: 450px;
-    cursor: pointer;
-  }
-  
-  /*Estylo de Texto*/
-  .text {
-  font-size: 19px;
-  line-height:1.5em;
-  text-align: justify;
+  height: 450px;
+  cursor: pointer;
+}
+
+/*Estylo de Texto*/
+.text {
+font-size: 19px;
+line-height:1.8em;
+text-align: justify;
+
 }
 
 /*Estylo de Titulo*/
-.title-Somos{
-    font-size: 40px;
-    padding-bottom: 30px;
+.title_Somos{
+  font-size: 40px;
+  padding-bottom: 50px;
+  
 }
+
+
+.Center_Contactanos{
+text-align: center;
+}
+
+.cont-container {
+display: flex;
+align-items: center; /* Alinea verticalmente los elementos */
+justify-content: center;
+gap: 90px; /* Ajusta el espacio entre los elementos */
+padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.escribe{
+
+padding-top: 25px;
+}
+
+/*Estilos del boton comprar*/
+.button_1 {
+background-color: rgb(0, 0, 0); 
+border: 2px solid #000000;
+border-radius: 20px;
+padding: 8px 20px;
+font-weight: bold;
+color: rgb(255, 255, 255);
+} 
+.comprar:hover {
+  background: #8bc0ec; 
+  color: rgb(0, 0, 0);}
+
+
