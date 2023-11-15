@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Victus from '../img/Victus.png';
 import Card from 'react-bootstrap/Card';
 import '../Components/Styles/Product.css'; // Asegúrate de importar tu archivo Product.css
-import Paypal from './Paypal';
+import MyPaypalButton from './Paypal.js';
 
 
 function CartProduct() {
@@ -32,7 +32,7 @@ function CartProduct() {
             className='pagar'
            >Realizar pago</Button>*/}
 
-            <Paypal />
+            <MyPaypalButton/>
 
           </Card.Body>
         </div>

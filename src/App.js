@@ -8,6 +8,8 @@ import GoogleAnalytics from './Components/Analytics';
 import Product from './Components/Product';
 import ProductList from './Components/Carts';
 import Somos from './Components/Epaper';
+
+
 //Agregao xd
 import Title1 from './Components/Title';
 import CarouselComponent from './Components/Carusel';
@@ -35,6 +37,7 @@ function Principal(){
  function App() {
    return (
      <>
+     
        <GoogleAnalytics />
        <BrowserRouter>
        <Menu />
@@ -47,6 +50,7 @@ function Principal(){
        </Routes>
        <Footer />
        </BrowserRouter>
+       
      </>
    );
  }
