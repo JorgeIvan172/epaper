@@ -1,41 +1,38 @@
+
 import Card from 'react-bootstrap/Card';
 //import CartProduct from './CartProduct'; // Asegúrate de que la ruta sea correcta
 import React from 'react';
 import './Styles/Carts.css';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import ListGroup from 'react-bootstrap/ListGroup';
-import productsData from './ProductData';
+//import productsData from './ProductData';
 import { Button } from 'react-bootstrap';
+
+import productosData from '../productos.json';
 
 
 
 function Cart(props) {
-  const { imageSrc, title, price, description } = props.product;
-
-    const navigate = useNavigate(); // Inicializa la instancia de useNavigate
+  const { id, nombre, precio, descripcion_corta, descripcion_larga, img} = props.product;
+  const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    // Aquí puedes definir la lógica de lo que sucede al hacer clic en el botón
-    // Por ejemplo, puedes redirigir a otra página
-    navigate('/producto'); // Cambia '/otra-pagina' por la ruta a la que quieres redirigir
+    navigate('/producto');
   }
 
-  
-    
   return (
-    <Card className="card-with-border" >
-      <Card.Img className="img img-center" src={imageSrc} />
+    <Card className="card-with-border">
+      <Card.Img className="img img-center" src={props.product.img} alt={nombre} />
       <Card.Body>
-        <Card.Title className="title">{title}</Card.Title>
-        <Card.Title className="title">{price}</Card.Title>
-        <Card.Text>{description}</Card.Text>
+        <Card.Title className="title">{nombre}</Card.Title>
+        <Card.Title className="title">${precio}</Card.Title>
+        <Card.Text>{descripcion_corta}</Card.Text>
+        {/* Verifica si descripcion_corta existe antes de intentar mostrarla */}
       </Card.Body>
-      
 
-<Button onClick={handleButtonClick}
-className='comprar'>
-  Comprar.</Button>
-      
+      <Button onClick={handleButtonClick} className='comprar'>
+        Comprar
+      </Button>
     </Card>
   );
 }
@@ -43,8 +40,8 @@ className='comprar'>
 function ProductList() {
   return (
     <div className="product-list-container">
-      {productsData.map((product, index) => (
-        <Cart key={index} product={product} />
+      {productosData.productos.map((product) => (
+        <Cart key={product.id} product={product} />
       ))}
     </div>
   );

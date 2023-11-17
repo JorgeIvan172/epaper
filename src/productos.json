@@ -1,0 +1,87 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Laptop Gamer Hp Victus",
+        "precio": 14000.00,
+        "descripcion_corta": "15.6, Intel Core i5-12450h",
+        "descripcion_larga": "Lo que tienes que saber de este producto Procesador Intel Core i5. Memoria RAM de 8GB. Pantalla IPS de 15.6. Resolución de 1920x1080 px. Tarjeta gráfica NVIDIA GeForce GTX 1650. Conexión wifi. La duración de la batería depende del uso que se le dé al producto.",
+        "img": "https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/Victus.png"
+      },
+      {
+        "id": 2,
+        "nombre": "Marcadores Okasis",
+        "precio": 140.00,
+        "descripcion_corta": "Descripción del Producto 2",
+        "descripcion_larga": "Art marker basado en el sistema de color Munsell, este hermoso set de marcadores de graffiti tiene 80 colores profesionales. Mejor chioce para aquellos que necesitan dibujar, escribir, esbozar, ilustrar, sombrear, diseñar, renderizar, manga y más.",
+        "img":"https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/marcadores.png"
+      },
+      {
+        "id": 3,
+        "nombre": "Diario profesional",
+        "precio": 460.00,
+        "descripcion_corta": "Cuaderno Profesional",
+        "descripcion_larga": "Este cuaderno profesional cuenta con 200 hojas cuadriculadas, con opciones de cuadro chico y grande. Tiene espacio para título y está foleado. Su espiral es grueso y super resistente, lo que le otorga una gran durabilidad.",
+        "img": "https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/cuadernos.png"
+      },
+      {
+        "id": 4,
+        "nombre": "Cuaderno Oxford",
+        "precio": 290.00,
+        "descripcion_corta": "Cuaderno de papel color verde 60 hojas",
+        "descripcion_larga": "Para notas que duran: Los cuadernos Oxford de 3 capas son resistentes al desgaste, al desgarro y a la humedad, por lo que tus notas importantes sobrevivirán a través de derrames, exámenes y mochilas repletas. Bolígrafos de gel y resaltadores son bienvenidos: Cada cuaderno contiene 150 hojas de papel liso que resiste el manchado de tinta y la decoloración para notas de pintura, A+.",
+        "img": "https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/Cuadernosoxford.png"
+      },
+      {
+        "id": 5,
+        "nombre": "Mouse Gaming",
+        "precio": 1500.00,
+        "descripcion_corta": "Logitech G305 LIGTHSPEED Inalambrico",
+        "descripcion_larga": "Adaptado a tus movimientos. El mouse de juego te ofrecerá la posibilidad de marcar la diferencia y sacar ventajas en tus partidas. Su conectividad y sensor suave ayudará a que te desplaces rápido por la pantalla.",
+        "img": "https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/mouse.png"
+      },
+      {
+        "id": 6,
+        "nombre": "Laptop Lenovo IdeaPad",
+        "precio": 3600.00,
+        "descripcion_corta": "14 p, Intel Celeron N4020",
+        "descripcion_larga": "La laptop Lenovo Ideapad 3i 81X700FVUS fue pensada para hacer tu vida más sencilla. Su diseño elegante e innovador y su comodidad para transportarla, la convertirá en tu PC favorita. Cualquier tarea que te propongas, ya sea en casa o en la oficina, la harás con facilidad gracias a su poderoso rendimiento.",
+        "img": "https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/lenovo.png"
+      },
+      {
+        "id": 7,
+        "nombre": "Boligrafo Paper",
+        "precio": 70.00,
+        "descripcion_corta": "Paper Mate Kilométrico Punta Fina Tinta Negra",
+        "descripcion_larga": "Viene con una punta que genera trazos de grosor fino, nítidos y legibles. Su sistema distribuye fácilmente la tinta sin generar manchas ya que seca 3 veces más rápido que un bolígrafo de gel normal",
+        "img": "https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/boligrafo.png"
+      },
+      {
+        "id": 8,
+        "nombre": "Mochila Moro",
+        "precio": 459.00,
+        "descripcion_corta": "Mochila para hombre Mochila para portátil de viaje",
+        "descripcion_larga": "Gran capacidad Esta mochila para casco de moto puede acomodar varios cascos de moto, cascos integrales, cascos todoterreno, etc. Además, puede llevar guantes de bicicleta. Para viajes diarios, viajes de oficina, deportes al aire libre, senderismo, puede colocar un portátil de 15,6 pulgadas, iPad, libros, baloncesto, fútbol, rugby, voleibol, 5 a 6 conjuntos de ropa de verano y algunos objetos pequeños",
+        "img": "https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/mochak.png"
+      },
+      {
+        "id": 9,
+        "nombre": "Harpie S-Gel",
+        "precio": 171.00,
+        "descripcion_corta": "Bolígrafos de gel, punta media (0,7 mm)",
+        "descripcion_larga": "Gran capacidad Esta mochila para casco de moto puede acomodar varios cascos de moto, cascos integrales, cascos todoterreno, etc. Además, puede llevar guantes de bicicleta. Para viajes diarios, viajes de oficina, deportes al aire libre, senderismo, puede colocar un portátil de 15,6 pulgadas, iPad, libros, baloncesto, fútbol, rugby, voleibol, 5 a 6 conjuntos de ropa de verano y algunos objetos pequeños",
+        "img": "https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/sharpies.png"
+      },
+      {
+        "id": 10,
+        "nombre": "Cable USB",
+        "precio": 199.00,
+        "descripcion_corta": "Cable usb c carga rapida(1M 2 Unidades)",
+        "descripcion_larga": "Con una velocidad de transferencia de datos de hasta 480MB/s, este cable puede transferir música, vídeos y archivos a su ordenador en cualquier momento. Tiene una longitud de 2 metros, lo que proporciona una mayor comodidad para el uso diario sin limitación de distancia.",
+        "img": "https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/usbc.png"
+      }
+    
+
+    ]
+  }
+

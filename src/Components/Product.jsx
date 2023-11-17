@@ -28,9 +28,9 @@ function CartProduct() {
             La duración de la batería depende del uso que se le dé al producto.
             </Card.Text>
 
-          {/*<Button
-            className='pagar'
-           >Realizar pago</Button>*/}
+      {/*<Button
+        className='pagar'
+        >Realizar pago</Button>*/}
 
             <MyPaypalButton/>
 

@@ -39,8 +39,8 @@ const CarouselComponent = () => {
                 <Carousel.Item interval={1000}>
                     <div class="col text-center">
                         <img
-                            className="img-fluid shadow-4 "
-                            src={Carusel3}                            
+                            className="img-fluid shadow-4"
+                            src={Carusel3}    
                             class="d-block w-100"
                             width={721}
                             alt="Third slide"
