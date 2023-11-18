@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/epaper/static/css/main.04b28527.css",
-    "main.js": "/epaper/static/js/main.7a0e41dc.js",
+    "main.js": "/epaper/static/js/main.6bb0a488.js",
     "static/js/787.76412e80.chunk.js": "/epaper/static/js/787.76412e80.chunk.js",
     "static/media/lenovo.png": "/epaper/static/media/lenovo.e4033e69e2f6f2d1f302.png",
     "static/media/Carusel1.jpg": "/epaper/static/media/Carusel1.7d26d1e8977103fbcdf4.jpg",
@@ -23,11 +23,11 @@
     "static/media/instagram.jpg": "/epaper/static/media/instagram.663148dcc90067015a61.jpg",
     "index.html": "/epaper/index.html",
     "main.04b28527.css.map": "/epaper/static/css/main.04b28527.css.map",
-    "main.7a0e41dc.js.map": "/epaper/static/js/main.7a0e41dc.js.map",
+    "main.6bb0a488.js.map": "/epaper/static/js/main.6bb0a488.js.map",
     "787.76412e80.chunk.js.map": "/epaper/static/js/787.76412e80.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.04b28527.css",
-    "static/js/main.7a0e41dc.js"
+    "static/js/main.6bb0a488.js"
   ]
 }
