@@ -51,6 +51,43 @@ return(
         </div>
             </div>
 
+
+
+            <div className="cont-container ">
+        <div className="somos-img">
+        <img src={Contactanos} className="img_Somos" alt='Somos'/>    
+        </div>
+        <div>
+        <h1 className="title_Somos Center_Contactanos">Contactanos a Nuestro Email.</h1>
+        <Form.Group >
+        <Form.Control placeholder="epaper.negocios@gmail.com" disabled />
+        <Form.Label className='escribe'>Escribe tus preguntas...</Form.Label>
+        <Form.Control as="textarea" rows={3} value={mensaje} onChange={handleChange} />
+      </Form.Group>
+                <div className='escribe'>
+    <Button className='button_1' onClick={handleShow}>
+        Enviar
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <Modal.Header style={{ background: "#303333", color: "#FFFFFF" }}>
+          <Modal.Title>Recibimos tu Mensaje!</Modal.Title>
+        </Modal.Header>
+        <Modal.Body style={{ background: "#303333", color: "#FFFFFF" }}>Gracias por Contactarnos.</Modal.Body>
+        <Modal.Footer style={{ background: "#303333", color: "#FFFFFF" }}>
+          <Button className='button_1' onClick={handleClose}>
+            Cerrar
+          </Button>
+          <Button className='button_1' onClick={handleClose}>
+            Hacer Otra Pregunta
+          </Button>
+        </Modal.Footer>
+      </Modal>
+                </div>
+        </div>
+            </div>
+
+
         <div className="somos-container color">
         <div className="somos-text">
             <h1 className="title_Somos">Nuestros Productos</h1>
