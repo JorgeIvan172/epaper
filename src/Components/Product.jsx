@@ -1,31 +1,44 @@
+
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Victus from '../img/Victus.png';
 import Card from 'react-bootstrap/Card';
 import '../Components/Styles/Product.css'; // Asegúrate de importar tu archivo Product.css
 import MyPaypalButton from './Paypal.js';
+import { useParams } from 'react-router-dom';
+
+
+import productosData from '../productos.json';
+
+
 
 
 function CartProduct() {
+
+  const { id } = useParams();  // Accede al id del producto desde los parámetros de la URL
+  console.log('ID:', id);
+  const product = productosData.productos.find(product => product.id === parseInt(id, 10));  // Busca el producto por id
+  console.log('Producto:', product);
+  if (!product) {
+    return <div>Producto no encontrado</div>;
+  }
+
+  const { nombre, precio, descripcion_corta, descripcion_larga, img } = product;
+
+
+
   return (
     <Card className='card-custom'>
       <div className="product-card">
         <div className="product-image">
-          <Card.Img className="" src={Victus} />
+          <Card.Img className="" src={img} />
         </div>
         <div className="product-details">
           <Card.Body>
-            <Card.Title className="title">Laptop Gamer Hp Victus 15.6 I5-12450h 8 Ram 512</Card.Title>
-            <Card.Title className="title">$ 14,000.00</Card.Title>
+            <Card.Title className="title">{nombre}</Card.Title>
+            <Card.Title className="title">${precio}</Card.Title>
             <Card.Text>
-            Lo que tienes que saber de este producto
-            Procesador Intel Core i5.
-            Memoria RAM de 8GB.
-            Pantalla IPS de 15.6".
-            Resolución de 1920x1080 px.
-            Tarjeta gráfica NVIDIA GeForce GTX 1650.
-            Conexión wifi.
-            La duración de la batería depende del uso que se le dé al producto.
+            {descripcion_larga}
             </Card.Text>
 
       {/*<Button

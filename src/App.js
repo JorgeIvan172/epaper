@@ -33,26 +33,26 @@ function Principal(){
 
 
 
-
- function App() {
-   return (
-     <>
-     
-       <GoogleAnalytics />
-       <BrowserRouter>
-       <Menu />
-       <Cookies />
-       <Routes>
-         <Route path="/epaper" Component={Principal} />
-         <Route path="/productos" Component={ProductList} />
-         <Route path="/producto" Component={Product} />
-         <Route path='/' Component={Somos}/>
-       </Routes>
-       <Footer />
-       </BrowserRouter>
-       
-     </>
-   );
- }
+            function App() {
+              return (
+                <>
+                
+                  <GoogleAnalytics />
+                  <BrowserRouter>
+                  <Menu />
+                  <Cookies />
+                  <Routes>
+                    <Route path="/epaper" Component={Principal} />
+                    <Route path="/productos" Component={ProductList} />
+                    
+                    <Route path="/producto/:id" Component={Product} />
+                    <Route path='/' Component={Somos}/>
+                  </Routes>
+                  <Footer />
+                  </BrowserRouter>
+                  
+                </>
+              );
+            }
 
 export default App;

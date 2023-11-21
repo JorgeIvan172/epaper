@@ -1,4 +1,3 @@
-
 import Card from 'react-bootstrap/Card';
 //import CartProduct from './CartProduct'; // Asegúrate de que la ruta sea correcta
 import React from 'react';
@@ -13,12 +12,15 @@ import productosData from '../productos.json';
 
 
 function Cart(props) {
+
+  const handleButtonClick = () => {
+    navigate(`/producto/${id}`); 
+  }
+
   const { id, nombre, precio, descripcion_corta, descripcion_larga, img} = props.product;
   const navigate = useNavigate();
 
-  const handleButtonClick = () => {
-    navigate('/producto');
-  }
+  
 
   return (
     <Card className="card-with-border">
