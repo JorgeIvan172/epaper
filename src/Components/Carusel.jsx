@@ -10,11 +10,11 @@ const CarouselComponent = () => {
         <Container fluid>
             <Carousel fade>
                 <Carousel.Item interval={1000}>
-                    <div class="col text-center">
+                    <div className="col text-center">
                         <img
-                            className="img-fluid shadow-4"
+                            className="img-fluid shadow-4 d-block w-100"
                             src={Carusel1}                           
-                            class="d-block w-100"
+                            
                             alt="First slide"
                             title="Carousel1"
                         />
@@ -25,11 +25,11 @@ const CarouselComponent = () => {
                 </Carousel.Item>
 
                 <Carousel.Item interval={1000}>
-                    <div class="col text-center">
+                    <div className="col text-center">
                         <img
-                            className="img-fluid shadow-4"
+                            className="img-fluid shadow-4 d-block w-100"
                             src={Carusel4}
-                            class="d-block w-100"
+                           
                             alt="Second slide"
                             title="Carousel2"
                         />
@@ -37,11 +37,11 @@ const CarouselComponent = () => {
                 </Carousel.Item>
 
                 <Carousel.Item interval={1000}>
-                    <div class="col text-center">
+                    <div className="col text-center">
                         <img
-                            className="img-fluid shadow-4"
+                            className="img-fluid shadow-4 d-block w-100"
                             src={Carusel3}    
-                            class="d-block w-100"
+                            
                             width={721}
                             alt="Third slide"
                             title="Carousel2"
