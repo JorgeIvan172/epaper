@@ -1,4 +1,5 @@
-
+import Table from './Table_Coments'
+import Title1 from './Title';
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Victus from '../img/Victus.png';
@@ -50,6 +51,10 @@ function CartProduct() {
           </Card.Body>
         </div>
       </div>
+
+      <Title1 text="Comentarios Sobre Este Producto." />
+      <Table />
+      
     </Card>
   );
 }
