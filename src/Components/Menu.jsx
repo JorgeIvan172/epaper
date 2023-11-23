@@ -65,15 +65,28 @@ function Menu() {
           </Nav>
 
         <NavDropdown  title="Tu Cuenta" id="" className='navbar-drop'>
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+
+              <NavDropdown.Item>
+              <Link to="/miperfil" className='navbar-item'>Mi Perfil</Link>
+                </NavDropdown.Item>
+
+              <NavDropdown.Item >
+              <Link to="/iniciarsesion" className='navbar-item'>Iniciar Sesion</Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+
+              <NavDropdown.Item >
+              <Link to="/crearcuenta" className='navbar-item'>Crear Cuenta</Link>
+              </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
+
+              <NavDropdown.Item>
+              <Link to="/epaper" className='navbar-item'>Cerrar Sesion</Link>
               </NavDropdown.Item>
+
+              <NavDropdown.Item href="#action/3.4">
+              <Link to="/administrador" className='navbar-item'>Administrador</Link>
+              </NavDropdown.Item>
+
             </NavDropdown>
 
         </Navbar.Collapse>

@@ -53,7 +53,22 @@ return(
 
 
 
-            <div className="cont-container ">
+            
+
+
+        <div className="somos-container color">
+        <div className="somos-text">
+            <h1 className="title_Somos">Nuestros Productos</h1>
+            <p className='text'>
+            Nuestros productos representan la amalgama perfecta de calidad y excelencia. Diseñados con un enfoque profesional, cada detalle se ha
+        cuidado meticulosamente para ofrecer a nuestros clientes un estándar excepcional.Nuestros productos están diseñados para satisfacer las demandas más exigentes de cada uno de estos ámbitos. La calidad superior es la piedra angular de nuestra oferta, garantizando una experiencia única y un rendimiento insuperable en cada uno de nuestros productos.
+            </p>
+        </div>
+        <img src={NuestrosPro} className="img_Somos"/>
+        </div>
+
+
+        <div className="cont-container ">
         <div className="somos-img">
         <img src={Contactanos} className="img_Somos" alt='Somos'/>    
         </div>
@@ -86,21 +101,6 @@ return(
                 </div>
         </div>
             </div>
-
-
-        <div className="somos-container color">
-        <div className="somos-text">
-            <h1 className="title_Somos">Nuestros Productos</h1>
-            <p className='text'>
-            Nuestros productos representan la amalgama perfecta de calidad y excelencia. Diseñados con un enfoque profesional, cada detalle se ha
-        cuidado meticulosamente para ofrecer a nuestros clientes un estándar excepcional.Nuestros productos están diseñados para satisfacer las demandas más exigentes de cada uno de estos ámbitos. La calidad superior es la piedra angular de nuestra oferta, garantizando una experiencia única y un rendimiento insuperable en cada uno de nuestros productos.
-            </p>
-        </div>
-        <img src={NuestrosPro} className="img_Somos"/>
-        </div>
-
-
-
     
         
 

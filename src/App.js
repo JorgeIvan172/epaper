@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Admin from './Components/Administrador';
 
 //Importar Componentes.
 import Menu from './Components/Menu';
@@ -44,7 +45,7 @@ function Principal(){
                   <Routes>
                     <Route path="/epaper" Component={Principal} />
                     <Route path="/productos" Component={ProductList} />
-                    
+                    <Route path="/administrador" Component={Admin} />
                     <Route path="/producto/:id" Component={Product} />
                     <Route path='/' Component={Somos}/>
                   </Routes>
