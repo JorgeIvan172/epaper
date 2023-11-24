@@ -30,6 +30,20 @@
   .navbar-links:hover {
     color:#3b79ba
   }
+
+
+  /* ...admin, inisiar sesion, crear tu cuenta, etc */
+
+  .navbar-item{
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Cambia el color del texto a blanco */
+    font-weight: bold; /* Añade negritas */
+    margin-right: 40px;
+  }
+  
+  .navbar-item:hover {
+    color:#3b79ba
+  }
   
 
   /* ...resto de tu CSS si lo hay */
