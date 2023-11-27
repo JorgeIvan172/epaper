@@ -49,7 +49,7 @@ function Menu() {
           <Nav className="me-auto">
           </Nav>
           <Nav>
-            <Link to="/" className='navbar-links'>Categorias</Link>
+            <Link to="/" className='navbar-links'>Inicio</Link>
           </Nav>
 
           <Nav>
