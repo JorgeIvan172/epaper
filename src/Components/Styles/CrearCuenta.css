@@ -1,0 +1,51 @@
+/* styles.css */
+.custom-button {
+    background-color: rgb(255, 255, 255); 
+  border: 2px solid #8bc0ec;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* Borde naranja */
+  }
+  
+  .custom-button:hover {
+    background: #8bc0ec; 
+    color: rgb(0, 0, 0);
+} 
+.tienda {
+    background-color: rgb(255, 255, 255); 
+  border: 2px solid #8bc0ec;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* Borde naranja */
+  }
+  
+  .tienda:hover {
+    background: #8bc0ec; 
+    color: rgb(0, 0, 0);
+
+  }
+  #miIcon {
+    position: relative; /* Cambiado a 'absolute' para posicionar en relación con el documento */
+    top: 120px; /* Mueve la imagen 50 píxeles desde la parte superior del documento */
+    left: 1120px; /* Mueve la imagen 100 píxeles desde el borde izquierdo del documento */
+      width: 75px; /* Ancho de la imagen en píxeles */
+      animation: float 2s linear infinite; /* Aplica la animación 'float' durante 2 segundos con un movimiento lineal infinito */
+    }
+    
+    /*animacion de la imagen representada en un estado flotante*/
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0rem); /* En el inicio y el final de la animación, la imagen no se mueve en el eje Y (0rem) */
+      }
+      50% {
+        transform: translateY(-1.5rem); /* En el punto intermedio (50%) de la animación, la imagen se mueve hacia arriba en el eje Y (-1.5rem) */
+      }
+    }
+    
+  
+ 
+  
+  

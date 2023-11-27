@@ -1,0 +1,46 @@
+/* styles.css */
+.custom-button {
+    background-color: rgb(255, 255, 255); 
+  border: 2px solid #8bc0ec;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* Borde naranja */
+  }
+  
+  .custom-button:hover {
+    background: #8bc0ec; 
+    color: rgb(0, 0, 0);
+} 
+.tienda {
+    background-color: rgb(255, 255, 255); 
+  border: 2px solid #8bc0ec;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* Borde naranja */
+  }
+  
+  .tienda:hover {
+    background: #8bc0ec; 
+    color: rgb(0, 0, 0);
+
+  }
+  #miIcono {
+    position: relative; /* Cambiado a 'absolute' para posicionar en relación con el documento */
+    top: 120px; /* Mueve la imagen 50 píxeles desde la parte superior del documento */
+    left: 1120px; /* Mueve la imagen 100 píxeles desde el borde izquierdo del documento */
+    width: 75px;
+    animation: float 2s linear infinite;
+  }
+
+  /*Aqui deberia de ir la configuracion pero se toma de el 
+  archivo CrearCuentas.css*/
+
+  
+  
+
+  
+ 
+  
+  
