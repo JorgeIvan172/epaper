@@ -1,3 +1,5 @@
+
+
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Admin from './Components/Administrador';
@@ -9,7 +11,8 @@ import GoogleAnalytics from './Components/Analytics';
 import Product from './Components/Product';
 import ProductList from './Components/Carts';
 import Somos from './Components/Epaper';
-
+import login from './Components/InicioSesion';
+import Registro from './Components/CrearCuenta';
 
 //Agregao xd
 import Title1 from './Components/Title';
@@ -48,6 +51,9 @@ function Principal(){
                     <Route path="/administrador" Component={Admin} />
                     <Route path="/producto/:id" Component={Product} />
                     <Route path='/' Component={Somos}/>
+                    <Route path='/iniciarsesion' Component={login}/>
+                    <Route path='/crearcuenta' Component={Registro}/>
+
                   </Routes>
                   <Footer />
                   </BrowserRouter>
@@ -57,3 +63,4 @@ function Principal(){
             }
 
 export default App;
+
