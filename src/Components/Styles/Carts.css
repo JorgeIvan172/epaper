@@ -5,7 +5,7 @@
     /*flex: 0 0 calc(25% - 20px);  25% para dividir en 4 columnas, y ajusta el espacio entre ellas */
     margin-left: 10px; 
     padding: 10px;
-    height: 450px; /* Puedes ajustar este valor según tus necesidades */ 
+    height: 550px; /* Puedes ajustar este valor según tus necesidades */ 
 
   }
 
@@ -34,6 +34,7 @@
   font-size: 22px;
   padding-top: 8px;
 }
+
 /*Estilos del boton comprar*/
 .comprar {
   background-color: rgb(255, 255, 255); 
@@ -42,6 +43,35 @@
   padding: 8px 20px;
   font-weight: bold;
   color: rgb(0, 0, 0);
+  } 
+  .comprar:hover {
+    background: #8bc0ec; 
+    color: rgb(0, 0, 0);}
+
+    
+/*Estilos del boton Quitar del Carrito*/
+.add {
+  background-color: rgb(15, 189, 70); 
+  border: 2px solid rgb(15, 189, 70);
+  border-radius: 20px;
+  padding: 3px 7px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  } 
+  .comprar:hover {
+    background: #8bc0ec; 
+    color: rgb(0, 0, 0);}
+
+/*Estilos del boton Quitar del Carrito*/
+
+
+.desc {
+  background-color: rgb(162, 16, 16); 
+  border: 2px solid rgb(162, 16, 16);
+  border-radius: 20px;
+  padding: 3px 7px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
   } 
   .comprar:hover {
     background: #8bc0ec; 

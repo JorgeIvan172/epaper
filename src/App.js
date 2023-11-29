@@ -13,6 +13,9 @@ import ProductList from './Components/Carts';
 import Somos from './Components/Epaper';
 import login from './Components/InicioSesion';
 import Registro from './Components/CrearCuenta';
+import Carrito from './Components/CarritoDeCompras';
+import {ShoppingCartProvider} from './Components/Contexts/CarritoDeCompasContext';
+
 
 //Agregao xd
 import Title1 from './Components/Title';
@@ -23,6 +26,7 @@ import ProductList_2 from './Components/Carts_2';
 import Cookies from './Components/Cookies';
 
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { useState } from 'react';
 function Principal(){
   return(
    <>
@@ -38,9 +42,10 @@ function Principal(){
 
 
             function App() {
+
               return (
-                <>
-                
+                <>                
+                  <ShoppingCartProvider>
                   <GoogleAnalytics />
                   <BrowserRouter>
                   <Menu />
@@ -53,11 +58,12 @@ function Principal(){
                     <Route path='/' Component={Somos}/>
                     <Route path='/iniciarsesion' Component={login}/>
                     <Route path='/crearcuenta' Component={Registro}/>
-
+                    <Route path='/carrito' Component={Carrito}/>
                   </Routes>
                   <Footer />
                   </BrowserRouter>
-                  
+                  </ShoppingCartProvider>
+ 
                 </>
               );
             }

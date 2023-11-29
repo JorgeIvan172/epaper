@@ -2,10 +2,12 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import React from 'react';
 import './Styles/Menu.css';
 import logo from '../img/logo1.jpg';
 import { Link } from 'react-router-dom';
+import React, { useState, useContext } from 'react';
+import { CartContext } from './Contexts/CarritoDeCompasContext'
+
 {/*import React from 'react';
 import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap'
 import { Link } from 'react-router-dom'; // Importa Link desde react-router-dom
@@ -38,6 +40,15 @@ export default Menu;*/}
 
 
 function Menu() {
+
+  const [cart, setCart] = useContext(CartContext);
+
+  const quantity = cart.reduce((acc, curr) => {
+    return acc + curr.quantity;
+  }, 0);
+
+
+
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-black">
       <Container>
@@ -55,6 +66,11 @@ function Menu() {
           <Nav>
             <Link to="/productos" className='navbar-links'>Productos</Link>
           </Nav>
+
+          <Nav>
+            <Link to="/carrito" className='navbar-links'>Carts Items <span>{quantity}</span></Link>
+          </Nav>
+
 
           <Nav>
             <Link to="/epaper" className='navbar-links'>E-Paper</Link>
