@@ -3,7 +3,7 @@ import './Styles/Carts.css';
 import { useNavigate } from 'react-router-dom'; // Importa useNavigate
 import ListGroup from 'react-bootstrap/ListGroup';
 //import productsData from './ProductData';
-import React, { useContext } from "react";
+import React, { useContext, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { CartContext } from './Contexts/CarritoDeCompasContext'
 import productosData from '../productos.json';
@@ -50,7 +50,7 @@ function Cart( {product}) {
   };
 
   const handleButtonClick = () => {
-    navigate(`/producto/${id}`); 
+    navigate(/producto/${id}); 
   }
 
   const getQuantityById = (id) => {
@@ -101,13 +101,68 @@ function Cart( {product}) {
 }
 
 function ProductList() {
+  const [searchTerm, setSearchTerm] = useState('');
+  const [sortBy, setSortBy] = useState(null); // Puede ser 'asc', 'desc', null
+  const [filteredProducts, setFilteredProducts] = useState(productosData.productos);
+  
+  const handleSearch = (e) => {
+    const searchTerm = e.target.value;
+    setSearchTerm(searchTerm);
+    filterProducts(searchTerm, sortBy);
+  };
+
+  const handleSort = (order) => {
+    setSortBy(order);
+    filterProducts(searchTerm, order, 'nombre');
+  };
+
+  const handleSortPrice = (order) => {
+    setSortBy(order);
+    filterProducts(searchTerm, order, 'precio');
+  };
+
+  const filterProducts = (searchTerm, order, sortByField) => {
+    let updatedProducts = [...productosData.productos];
+  
+    // Lógica de búsqueda
+    if (searchTerm) {
+      updatedProducts = updatedProducts.filter((product) =>
+        product.nombre.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+  
+    // Lógica de orden
+    if (sortByField === 'nombre') {
+      updatedProducts.sort((a, b) => (order === 'asc' ? a.nombre.localeCompare(b.nombre) : b.nombre.localeCompare(a.nombre)));
+    } else if (sortByField === 'precio') {
+      updatedProducts.sort((a, b) => (order === 'asc' ? a.precio - b.precio : b.precio - a.precio));
+    }
+  
+    setFilteredProducts(updatedProducts);
+  };
+  
   return (
+    <>
     <div className="product-list-container">
-      {productosData.productos.map((product) => (
-        <Cart key={product.id} product={product} />
+    <input
+        type="text"
+        placeholder="Buscar productos..."
+        value={searchTerm}
+        onChange={handleSearch}
+      />
+
+      <button onClick={() => handleSort('asc')}>Ordenar A-Z</button>
+      <button onClick={() => handleSort('desc')}>Ordenar Z-A</button>
+      <button onClick={() => handleSortPrice('asc')}>Menor Precio</button>
+      <button onClick={() => handleSortPrice('desc')}>Mayor Precio</button>
+    </div>
+    <div className="product-list-container">
+        {filteredProducts.map((product) => (
+            <Cart key={product.id} product={product} />
       ))}
     </div>
+    </>
   );
 }
 
-export default ProductList;
+export default ProductList;
