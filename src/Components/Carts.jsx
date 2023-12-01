@@ -50,7 +50,7 @@ function Cart( {product}) {
   };
 
   const handleButtonClick = () => {
-    navigate(/producto/${id}); 
+    navigate(`/producto/${id}`); 
   }
 
   const getQuantityById = (id) => {
