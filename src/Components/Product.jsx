@@ -39,6 +39,9 @@ function CartProduct() {
             <Card.Title className="title">{nombre}</Card.Title>
             <Card.Title className="title">${precio}</Card.Title>
             <Card.Text>
+            {descripcion_corta}
+            </Card.Text>
+            <Card.Text>
             {descripcion_larga}
             </Card.Text>
 

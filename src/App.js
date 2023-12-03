@@ -14,6 +14,7 @@ import Somos from './Components/Epaper';
 import login from './Components/InicioSesion';
 import Registro from './Components/CrearCuenta';
 import Carrito from './Components/CarritoDeCompras';
+import Favoritos from './Components/Favoritos';
 import {ShoppingCartProvider} from './Components/Contexts/CarritoDeCompasContext';
 
 
@@ -51,11 +52,12 @@ function Principal(){
                   <Menu />
                   <Cookies />
                   <Routes>
-                    <Route path="/epaper" Component={Principal} />
+                    <Route path="/contacto" Component={Somos} />
                     <Route path="/productos" Component={ProductList} />
                     <Route path="/administrador" Component={Admin} />
+                    <Route path="/favoritos" Component={Favoritos} />
                     <Route path="/producto/:id" Component={Product} />
-                    <Route path='/' Component={Somos}/>
+                    <Route path='/epaper' Component={Principal}/>
                     <Route path='/iniciarsesion' Component={login}/>
                     <Route path='/crearcuenta' Component={Registro}/>
                     <Route path='/carrito' Component={Carrito}/>

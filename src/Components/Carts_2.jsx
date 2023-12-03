@@ -10,46 +10,40 @@ import { Button } from 'react-bootstrap';
 
 
 function Cart(props) {
-  const { imageSrc, title, price, description } = props.product;
+  const { id, imageSrc, title, price, description } = props.product; // Add 'id' here
 
-    const navigate = useNavigate(); // Inicializa la instancia de useNavigate
+  const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    // Aquí puedes definir la lógica de lo que sucede al hacer clic en el botón
-    // Por ejemplo, puedes redirigir a otra página
-    navigate('/producto'); // Cambia '/otra-pagina' por la ruta a la que quieres redirigir
+    navigate(`/producto/${id}`);
   }
 
-  
-    
   return (
-    <Card className="card-with-border" >
+    <Card className="card-with-border">
       <Card.Img className="img img-center" src={imageSrc} />
       <Card.Body>
         <Card.Title className="title">{title}</Card.Title>
         <Card.Title className="title">{price}</Card.Title>
         <Card.Text>{description}</Card.Text>
       </Card.Body>
-      
 
-<Button onClick={handleButtonClick}
-className='comprar'>
-  Comprar.</Button>
-      
+      {/* <Button onClick={handleButtonClick} className='comprar'>
+        Comprar.
+      </Button> */}
     </Card>
   );
 }
 
 function ProductList() {
-  const firstThreeProducts = productsData.slice(0, 3);
+  const firstThreeProducts = productsData.slice(0, 4);
 
   return (
     <div className="product-list-container">
       {firstThreeProducts.map((product, index) => (
-        <Cart key={index} product={product} />
+        <Cart key={index} product={product} /> // Pass the 'product' object to 'Cart'
       ))}
     </div>
   );
 }
 
-export default ProductList;
+export default ProductList;

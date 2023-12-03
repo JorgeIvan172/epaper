@@ -1,5 +1,6 @@
 import Table_P from './Tables/Table_Products';
 import Table_U from './Tables/Table_Users';
+import Table_C from './Tables/Tables_Catego';
 import Title1 from './Title';
 import JsonProduct from './Tables/JsonProducts'
 //<Table_P />
@@ -12,6 +13,9 @@ function Admin(){
         
         <Title1 text="Usuarios" />
         <Table_U />
+
+        <Title1 text="Categorias" />
+        <Table_C />
         </>
     )
 }

@@ -1,0 +1,29 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nombre": "Laptops",
+            "descripcion": "Equipos portátiles potentes para satisfacer tus necesidades informáticas en movimiento."
+        },
+        {
+            "id": 2,
+            "nombre": "Lápices",
+            "descripcion": "Instrumentos de escritura esenciales para expresar tus ideas de manera creativa y eficiente."
+        },
+        {
+            "id": 3,
+            "nombre": "Cuadernos",
+            "descripcion": "Libretas y blocs de notas para tomar apuntes y organizar tus pensamientos."
+        },
+        {
+            "id": 4,
+            "nombre": "Accesorios PC",
+            "descripcion": "Complementos y periféricos para mejorar tu experiencia con la computadora."
+        },
+        {
+            "id": 5,
+            "nombre": "Mochilas",
+            "descripcion": "Bolsos espaciosos y cómodos diseñados para transportar tus pertenencias con facilidad."
+        }
+    ]
+}

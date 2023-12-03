@@ -14,7 +14,7 @@
       "nombre": "Marcadores Okasis",
       "precio": 140.00,
       "categoria": "Lapices",
-      "descripcion_corta": "Descripción del Producto 2",
+      "descripcion_corta": "Marcadores Astetics",
       "descripcion_larga": "Art marker basado en el sistema de color Munsell, este hermoso set de marcadores de graffiti tiene 80 colores profesionales. Mejor chioce para aquellos que necesitan dibujar, escribir, esbozar, ilustrar, sombrear, diseñar, renderizar, manga y más.",
       "img":"https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/marcadores.png"
     },
@@ -23,7 +23,7 @@
       "nombre": "Diario profesional",
       "precio": 460.00,
       "categoria": "Cuadernos",
-      "descripcion_corta": "Cuaderno Profesional",
+      "descripcion_corta": "Cuaderno Profesional Negro",
       "descripcion_larga": "Este cuaderno profesional cuenta con 200 hojas cuadriculadas, con opciones de cuadro chico y grande. Tiene espacio para título y está foleado. Su espiral es grueso y super resistente, lo que le otorga una gran durabilidad.",
       "img": "https://raw.githubusercontent.com/JorgeIvan172/Imagenes/master/TOPIC-PROJECTS/Negocios/cuadernos.png"
     },

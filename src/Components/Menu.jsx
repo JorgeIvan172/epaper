@@ -7,6 +7,7 @@ import logo from '../img/logo1.jpg';
 import { Link } from 'react-router-dom';
 import React, { useState, useContext } from 'react';
 import { CartContext } from './Contexts/CarritoDeCompasContext'
+import { useNavigate } from 'react-router-dom';
 
 {/*import React from 'react';
 import { Navbar, Container, NavDropdown, Nav } from 'react-bootstrap'
@@ -40,6 +41,7 @@ export default Menu;*/}
 
 
 function Menu() {
+  const navigate = useNavigate();
 
   const [cart, setCart] = useContext(CartContext);
 
@@ -47,21 +49,24 @@ function Menu() {
     return acc + curr.quantity;
   }, 0);
 
-
+  const handleLogoClick = () => {
+    // Navegar a la ruta deseada cuando se hace clic en el logo
+    navigate('/epaper');  // Reemplaza '/tu/ruta' con la ruta a la que deseas navegar
+  };
 
   return (
     <Navbar collapseOnSelect expand="lg" className="bg-black">
       <Container>
         
-      <img src={logo} alt="Logo" className="navbar-logo"/>
+      <img src={logo} alt="Logo"  className="navbar-logo" onClick={handleLogoClick}/>
 
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
           </Nav>
-          <Nav>
+          {/*<Nav>
             <Link to="/" className='navbar-links'>Inicio</Link>
-          </Nav>
+          </Nav>*/}
 
           <Nav>
             <Link to="/productos" className='navbar-links'>Productos</Link>
@@ -73,11 +78,11 @@ function Menu() {
 
 
           <Nav>
-            <Link to="/epaper" className='navbar-links'>E-Paper</Link>
+            <Link to="/favoritos" className='navbar-links'>Favoritos</Link>
           </Nav>
 
           <Nav>
-            <Link to="/" className='navbar-links'>Contactanos</Link>
+            <Link to="/contacto" className='navbar-links'>Contactanos</Link>
           </Nav>
 
         <NavDropdown  title="Tu Cuenta" id="" className='navbar-drop'>
