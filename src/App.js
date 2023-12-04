@@ -1,5 +1,4 @@
 
-
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Admin from './Components/Administrador';
@@ -15,6 +14,7 @@ import login from './Components/InicioSesion';
 import Registro from './Components/CrearCuenta';
 import Carrito from './Components/CarritoDeCompras';
 import Favoritos from './Components/Favoritos';
+import Perfil from './Components/Perfil';
 import {ShoppingCartProvider} from './Components/Contexts/CarritoDeCompasContext';
 
 
@@ -61,6 +61,8 @@ function Principal(){
                     <Route path='/iniciarsesion' Component={login}/>
                     <Route path='/crearcuenta' Component={Registro}/>
                     <Route path='/carrito' Component={Carrito}/>
+                    <Route path='/perfil' Component={Perfil}/>
+
                   </Routes>
                   <Footer />
                   </BrowserRouter>
@@ -71,4 +73,3 @@ function Principal(){
             }
 
 export default App;
-

@@ -1,0 +1,31 @@
+.carrito-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.carrito-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.carrito-summary {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.carrito-info {
+    margin-bottom: 10px;
+}
+
+.info-text {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.paypal-button {
+    text-align: center;
+}
+

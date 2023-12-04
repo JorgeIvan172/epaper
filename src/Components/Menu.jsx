@@ -1,3 +1,5 @@
+
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -82,6 +84,10 @@ function Menu() {
           </Nav>
 
           <Nav>
+            <Link to="/perfil" className='navbar-links'>Perfil</Link>
+          </Nav>
+
+          <Nav>
             <Link to="/contacto" className='navbar-links'>Contactanos</Link>
           </Nav>
 
@@ -118,3 +124,4 @@ function Menu() {
 
 
 export default Menu;
+
