@@ -57,7 +57,8 @@ function Menu() {
   };
 
   return (
-    <Navbar collapseOnSelect expand="lg" className="bg-black">
+
+    <Navbar collapseOnSelect expand="lg" className="bg">
       <Container>
         
       <img src={logo} alt="Logo"  className="navbar-logo" onClick={handleLogoClick}/>
@@ -83,9 +84,7 @@ function Menu() {
             <Link to="/favoritos" className='navbar-links'>Favoritos</Link>
           </Nav>
 
-          <Nav>
-            <Link to="/perfil" className='navbar-links'>Perfil</Link>
-          </Nav>
+
 
           <Nav>
             <Link to="/contacto" className='navbar-links'>Contactanos</Link>
@@ -94,7 +93,7 @@ function Menu() {
         <NavDropdown  title="Tu Cuenta" id="" className='navbar-drop'>
 
               <NavDropdown.Item>
-              <Link to="/miperfil" className='navbar-item'>Mi Perfil</Link>
+              <Link to="/perfil" className='navbar-item'>Mi Perfil</Link>
                 </NavDropdown.Item>
 
               <NavDropdown.Item >
