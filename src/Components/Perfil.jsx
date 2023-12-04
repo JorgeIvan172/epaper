@@ -35,6 +35,8 @@ const UserProfile = () => {
 
   return (
     <>
+
+    
       <div className="container mt-5" style={{ maxWidth: '550px' }}>
         <div className="user-info-container">
           <h1 className="fw-bold">Perfil del Usuario</h1>
@@ -75,7 +77,7 @@ const UserProfile = () => {
                   Editar Datos 
                 </button>
 
-                <Link to="/contacto" className="btn tienda ml-2">
+                <Link to="/productos" className="btn tienda ml-2">
                   Comprar Productos
                 </Link>
               </div>

@@ -109,10 +109,13 @@ export default function Registro() {
               />
             </div>
 
-            <button type="submit" className="btn custom-button">
+            <div className="p-2 flex-fill">
+            <Link to="/iniciarsesion" className="btn tienda">
               Registrarse
-            </button>
+            </Link>
 
+            
+          </div>
             {/* Mostrar mensaje de error si existe */}
             {error && <p className="text-danger">{error}</p>}
           </div>
