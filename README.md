@@ -1,4 +1,4 @@
-## runTheProject
+## Run The Project
 
 1. Clone Repositore
 2. npm install
